@@ -1,3 +1,59 @@
+
+
+/* Site Inspiration */
+/*
+https://www.scalzodesign.be
+
+https://www.miskastudio.com
+
+https://rejouice.com
+
+https://libermans-488f73.webflow.io
+
+https://www.adhoclegal.gr
+
+http://new.savour.design
+
+https://jacobmckee.com
+
+https://vitaarchitecture.com/projects/
+
+https://www.giuligartner.com/stills/inspired-by-iceland
+
+https://www.artsphere.fr
+
+https://www.margotpriolet.com
+
+https://akaru.fr
+
+https://www.theperfumeshop.com/carolina-herrera-virtual-store
+
+*/
+/* Site Inspiration */
+
+
+
+
+
 body {
-  background-color:red;
+  background-color: #efefef;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.text-right {
+  text-align: right;
+}
+
+nav a, nav span {
+  text-transform: uppercase;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
 }
