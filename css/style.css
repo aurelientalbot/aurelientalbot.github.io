@@ -102,3 +102,24 @@ margin-left: 4rem;
  padding: 6rem 0; 
 }
 }
+
+
+
+
+/* footer */
+footer .rs__footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .rs__footer ul li {
+  display: inline-block;
+}
+
+footer .rs__footer ul li a {
+text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+/* footer */
