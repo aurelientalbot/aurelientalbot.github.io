@@ -61,3 +61,42 @@ nav a {
 nav {
   border-bottom: 1px solid #000;
 }
+
+
+
+
+
+.big__menu ul {
+  list-style-type: none;
+  padding:0;
+  text-align: center;
+}
+.big__menu ul a {
+color: #000;
+text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.big__menu ul li {
+margin-bottom: 0.5rem;
+}
+
+.big__menu ul li:first-child {
+margin-left: -5rem;
+}
+
+.big__menu ul li:nth-child(2) {
+margin-left: 2rem;
+}
+
+.big__menu ul li:nth-child(3) {
+margin-left: 4rem;
+}
+
+@media screen and (min-width: 991px) {
+  .big__menu ul a {
+  font-size: 3rem;
+}
+}
