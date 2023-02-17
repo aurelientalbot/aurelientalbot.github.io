@@ -112,6 +112,10 @@ footer .rs__footer ul {
   padding: 0;
 }
 
+.footer__content {
+  border-top: 1px solid #000;
+}
+
 footer .rs__footer ul li {
   display: inline-block;
 }
