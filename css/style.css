@@ -1,154 +1,188 @@
-<!DOCTYPE html>
-<html lang="fr">
+/* Site Inspiration */
+/*
+https://www.scalzodesign.be
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aurélien Talbot - Blog</title>
+https://www.miskastudio.com
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+https://rejouice.com
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Roboto:wght@100;300;400&display=swap"
-    rel="stylesheet">
+https://libermans-488f73.webflow.io
 
-</head>
+https://www.adhoclegal.gr
 
-<body>
+http://new.savour.design
 
+https://jacobmckee.com
 
+https://vitaarchitecture.com/projects/
 
-  <header class="container-fluid">
-    <nav class="pt-4 pb-1">
-      <div class="row">
-        <div class="col-6">
-          <div class="col__content">
-            <span>
-              <a href="index.html">
-                Aurélien Talbot
-              </a>
-            </span>
-          </div>
+https://www.giuligartner.com/stills/inspired-by-iceland
+
+https://www.artsphere.fr
+
+https://www.margotpriolet.com
+
+https://akaru.fr
+
+https://www.theperfumeshop.com/carolina-herrera-virtual-store
+
+*/
+/* Site Inspiration */
 
 
-        </div>
-        <div class="col-6">
-          <div class="col__content text-right">
-            <span><a href="">Instagram</a></span>
-          </div>
-        </div>
-
-      </div>
-    </nav>
-  </header>
+/*
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Roboto', sans-serif;
+*/
 
 
+body {
+  background-color: #efefef;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 
-  <section class="home__header">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="col__content text-center ">
-            <h1>Aurélien Talbot</h1>
-            <h2>Blog personnel</h2>
-          </div>
-        </div>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cormorant Garamond', serif;
+}
 
-        <div class="row">
-          <div class="col-12">
-            <div class="col__content text-center pt-5">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, exercitationem! Nulla beatae
-                reprehenderit aliquam soluta qui sed iste esse facilis. Consectetur cupiditate odit maiores fugit?
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio hic explicabo non provident nobis?
-                Officia perferendis voluptatibus doloremque qui nihil nisi eos ad obcaecati? Veritatis!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+.text-right {
+  text-align: right;
+}
 
+nav a,
+nav span {
+  text-transform: uppercase;
+  font-family: 'Cormorant Garamond', serif;
+}
 
-<div class="scrolling__instructions">
-  scroll
-</div>
+nav a {
+  color: #000;
+  text-decoration: none;
+}
 
-
-  <section class="big__menu">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="col__content text-center">
-            <ul>
-              <li><a href="works.html">Works</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="instagram.html">Instagram</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+nav {
+  border-bottom: 1px solid #000;
+}
 
 
-  <div class="scrolling__instructions">
-    scroll
-  </div>
+/* Accueil */
+
+.home__header {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  height:85vh;
+
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
-  <footer>
-    <div class="container-fluid">
-      <div class="footer__content">
-        <div class="row">
-          <div class="col-12">
-            <div class="rs__footer">
-              <ul>
-                <li><a href="">Instagram</a></li>
-                /
-                <li><a href="">Linkedin</a></li>
-                /
-                <li><a href="">Twitter</a></li>
-                /
-                <li><a href="">Tik Tok</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+.home__header h1, .home__header h2 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  line-height: 1;
+}
 
-        <div class="row">
-          <div class="col-12">
-            <div class="credits__site text-center">
-              <p>
-                2023 - All rights reserved - Aurélien Talbot
-              </p>
-            </div>
+.home__header h2 {
+font-size: 1.5rem;
+}
 
-          </div>
-        </div>
+@media screen and (min-width:991px) {
+  .home__header h1 {
+    font-size: 3rem;
+    }
+}
 
-      </div>
-    </div>
-  </footer>
+@media screen and (min-width:1024px) {
+  .home__header h1 {
+    font-size: 4rem;
+    }
+}
+
+@media screen and (min-width:1400px) {
+  .home__header h1 {
+    font-size: 5rem;
+    }
+}
 
 
+/* Big menu */
+.big__menu {
+  padding: 4rem 0;
+}
+
+.big__menu ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.big__menu ul a {
+  color: #000;
+  text-transform: uppercase;
+  font-family: 'Cormorant Garamond', serif;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+
+@media screen and (min-width: 991px) {
+  .big__menu ul a {
+    font-size: 4rem;
+  }
+
+  .big__menu {
+    padding: 6rem 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .big__menu ul a {
+    font-size: 5rem;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .big__menu ul a {
+    font-size: 6rem;
+  }
+
+}
+/* Big menu */
 
 
 
+/* footer */
+footer .rs__footer ul {
+  list-style-type: none;
+  padding: 0;
+}
 
+.footer__content {
+  border-top: 1px solid #000;
+  padding-top: 0.5rem;
+}
 
+footer .rs__footer ul li {
+  display: inline-block;
+}
 
+footer .rs__footer ul li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-family: 'Cormorant Garamond', serif;
+}
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
-
-</body>
-
-</html>
+/* footer */
