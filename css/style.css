@@ -32,12 +32,16 @@ https://www.theperfumeshop.com/carolina-herrera-virtual-store
 /* Site Inspiration */
 
 
-
+/*
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Roboto', sans-serif;
+*/
 
 
 body {
   background-color: #efefef;
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,7 +69,7 @@ nav {
 
 
 .big__menu {
- padding: 4rem 0; 
+ padding: 6rem 0; 
 }
 
 .big__menu ul {
@@ -79,18 +83,26 @@ text-transform: uppercase;
     font-family: 'Cormorant Garamond', serif;
   text-decoration: none;
   font-size: 2rem;
+  font-weight: 300;
 }
 
-.big__menu ul li:nth-child(3) {
-margin-left: 4rem;
-}
 
 @media screen and (min-width: 991px) {
   .big__menu ul a {
   font-size: 3rem;
 }
   .big__menu {
- padding: 6rem 0; 
+ padding: 8rem 0; 
+}
+}
+
+
+@media screen and (min-width: 1024px) {
+  .big__menu ul a {
+  font-size: 4rem;
+}
+  .big__menu {
+ padding: 8rem 0; 
 }
 }
 
@@ -116,6 +128,8 @@ footer .rs__footer ul li a {
 text-decoration: none;
   color: #000;
   text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+  font-size: 0.8rem;
 }
 
 /* footer */
