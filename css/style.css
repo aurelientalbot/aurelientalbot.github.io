@@ -163,7 +163,18 @@ padding: 4rem;
 
 
 /* blog section */
+.blog-fp {
+margin: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+        border-radius: 10px;
+}
 
+  @media screen and (min-width: 1024px) {
+.blog-fp {
+margin: 2rem;
+}
+}
 /* blog section */
 
 
