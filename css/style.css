@@ -122,6 +122,10 @@ margin: 0.2rem 0;
 }
 /* header */
 
+  .subheader {
+width: 100%;
+    height: 1rem;
+  }
 
 /* accueil section */
 .accueil {
