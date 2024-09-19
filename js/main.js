@@ -1,3 +1,21 @@
+
+function ajusterPaddingTop() {
+  //  var hauteurTopBar = document.querySelector(".top-bar") ? document.querySelector(".top-bar").offsetHeight : 0;
+    var hauteurMenu = document.querySelector("header").offsetHeight;
+    var hauteurTotale = hauteurMenu;
+ //  var hauteurTotale = hauteurTopBar + hauteurMenu;
+    
+    document.querySelector(".accueil").style.paddingTop = hauteurTotale + "px";
+}
+
+// Ajuster le padding-top lors du chargement du document et au redimensionnement de la fenêtre
+document.addEventListener("DOMContentLoaded", function () {
+    ajusterPaddingTop();
+    window.addEventListener("resize", ajusterPaddingTop);
+});
+
+
+
 // On attend que le DOM soit entièrement chargé
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector('.navbar-menu-toggle');
