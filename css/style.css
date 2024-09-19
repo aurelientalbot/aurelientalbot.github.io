@@ -25,6 +25,7 @@ header {
   position: fixed;
     left: 1rem;
     right: 1rem; 
+  margin-bottom: 1rem;
 }
 
 .navbar-menu-toggle {
@@ -130,6 +131,11 @@ background-image: url('../images/background-test.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+      border-radius: 10px;
+}
+
+.accueil .content {
+
 }
 
 @media screen and (min-width: 1024px) {
