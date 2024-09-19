@@ -171,9 +171,11 @@ footer {
 margin: 1rem;
   padding: 1rem;
   background-color: #fff;
+        border-radius: 10px;
 }
   footer p {
     margin: 0;
+  }
   @media screen and (min-width: 1024px) {
 footer {
 margin: 2rem;
