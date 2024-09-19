@@ -1,1 +1,113 @@
+/* Inspirations 
+https://biotech.chipsa.design/
+https://govoyager.com/
+https://freebiesbug.com/code-stuff/elena-portfolio-template/
+https://freebiesbug.com/code-stuff/framer-agency-template/
+  font-family: "Barlow", sans-serif;
+font-family: "Inter", sans-serif;
+*/
 
+
+body {
+      background-color: #f1f1f2;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  margin: 1rem;
+}
+
+.navbar {
+    display: flex;
+  flex-direction: row;
+  position: fixed;
+    left: 1rem;
+    right: 1rem; 
+}
+
+.navbar-menu-toggle {
+      display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-brand {
+        background-color: #fff;
+  border-radius: 10px;
+      padding: 15px 15px;
+  margin: 0 0.3rem 0 0;
+}
+
+.navbar-brand h1 {
+    font-size: 24px;
+}
+
+.navbar-menu{
+  flex: 1;
+  position: relative;
+}
+
+.navbar-menu-toggle {
+       background-color: #fff;
+  border-radius: 10px;
+      padding: 15px 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar-menu-toggle span {
+  margin: 0 0.5rem 0 0;
+}
+
+
+
+.navbar-menu-links-box {
+  display: none; /* Cacher le menu au début */
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  left: 0;
+  
+         background-color: #fff;
+  border-radius: 10px;
+      padding: 15px 15px;
+  z-index: 9;
+}
+
+.navbar-menu-links-box ul {
+  list-style-type: none;
+}
+.navbar-menu-links-box a {
+  color: #000;
+  text-decoration: none;
+}
+.navbar-menu-links-box li {
+margin: 0.2rem 0;
+  padding: 0.5rem 0;
+}
+
+.navbar-menu-toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+  margin: 1.5rem 2rem 1rem 1.5rem;
+}
+  .navbar {
+    left: 2rem;
+    right: 2rem;
+    transition: .5s;
+  }  
+  
+  .navbar.scrolled {
+      left: 3.5rem;
+    right: 3.5rem;
+    transition: .5s;
+}
+}
