@@ -63,12 +63,10 @@ header {
   margin: 0 0.5rem 0 0;
 }
 
-
-
 .navbar-menu-links-box {
   display: none; /* Cacher le menu au début */
   position: absolute;
-  top: 4.5rem;
+  top: 4.1rem;
   right: 0;
   left: 0;
   
@@ -123,10 +121,7 @@ margin: 0.2rem 0;
 }
 /* header */
 
-  .sub-header {
-width: 100%;
-    height: 1rem;
-  }
+
 
 /* accueil section */
 .accueil {
