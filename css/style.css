@@ -117,11 +117,25 @@ margin: 0.2rem 0;
 
 
 /* accueil section */
+.accueil {
+margin: 1rem;
+}
+
+.accueil p, .accueil h1 {
+color: #fff;
+}
+
 .accueil-background {
 background-image: url('../images/background-test.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+.accueil {
+margin: 2rem;
+}
 }
 /* accueil section */
 
