@@ -47,7 +47,6 @@ header {
 
 .navbar-menu{
   flex: 1;
-  position: relative;
 }
 
 .navbar-menu-toggle {
@@ -69,7 +68,7 @@ header {
 .navbar-menu-links-box {
   display: none; /* Cacher le menu au début */
   position: absolute;
-  top: 4rem;
+  top: 4.5rem;
   right: 0;
   left: 0;
   
@@ -77,6 +76,8 @@ header {
   border-radius: 10px;
       padding: 15px 15px;
   z-index: 9;
+
+      margin: 0.5rem 0;
 }
 
 .navbar-menu-links-box ul {
@@ -96,6 +97,11 @@ margin: 0.2rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+.navbar-menu {
+    position: relative;
 }
 
 @media screen and (min-width: 1024px) {
@@ -135,12 +141,15 @@ background-image: url('../images/background-test.jpg');
 }
 
 .accueil .content {
-
+padding: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
 .accueil {
 margin: 2rem;
+}
+  .accueil .content {
+padding: 4rem;
 }
 }
 /* accueil section */
