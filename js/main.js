@@ -36,7 +36,7 @@ function ajusterPaddingTop() {
     var hauteurMenu = document.querySelector(".navbar").offsetHeight;
     var hauteurTotale = hauteurMenu;
     
-    document.querySelector(".accueil").style.paddingTop = hauteurTotale + "px";
+    document.querySelector(".accueil").style.paddingTop = hauteurTotale + "px" + "5px" ;
 }
 
 // Ajuster le padding-top lors du chargement du document et au redimensionnement de la fenêtre
