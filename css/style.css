@@ -119,6 +119,9 @@ margin: 0.2rem 0;
 /* accueil section */
 .accueil-background {
 background-image: url('../images/background-test.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* accueil section */
 
