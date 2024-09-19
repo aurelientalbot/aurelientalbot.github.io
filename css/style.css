@@ -143,6 +143,7 @@ background-image: url('../images/background-test.jpg');
   background-repeat: no-repeat;
   background-size: cover;
       border-radius: 10px;
+      margin-top: 1rem;
 }
 
 .accueil .content {
