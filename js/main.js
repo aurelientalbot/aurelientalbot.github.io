@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function ajusterPaddingTop() {
     var hauteurMenu = document.querySelector(".navbar").offsetHeight;
-var subheader = document.querySelector(".sub-header").offsetHeight;
-    var hauteurTotale = hauteurMenu + subheader;
+
+    var hauteurTotale = hauteurMenu;
     
     document.querySelector(".accueil").style.paddingTop = hauteurTotale + "px";
 }
