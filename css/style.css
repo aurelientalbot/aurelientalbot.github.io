@@ -45,7 +45,7 @@ header {
     font-size: 24px;
 }
 
-.navbar-menu{
+.navbar-menu {
   flex: 1;
 }
 
@@ -102,6 +102,7 @@ margin: 0.2rem 0;
 @media screen and (min-width: 768px) {
 .navbar-menu {
     position: relative;
+}
 }
 
 @media screen and (min-width: 1024px) {
