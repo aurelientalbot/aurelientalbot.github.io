@@ -166,6 +166,109 @@ margin: 1rem;
         border-radius: 10px;
 }
 
+.block__article {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 25rem;
+  overflow: hidden;
+}
+
+
+article {
+  position: relative;
+   width: 100%;
+  height: 100%;
+}
+
+article .tumbnail {
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+article .tumbnail img {
+ width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article__bottom {
+z-index: 1;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    left: 0.5rem;
+    right: 0.5rem;
+}
+
+.article__bottom__content {
+  background-color: #fff;
+  padding: 1rem;
+    border-radius: 10px;
+}
+
+.title__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title__button h2 {
+  line-height: 1;
+}
+
+.title__button a {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  min-width: 5rem;
+  margin-left: 2rem;
+}
+
+/*
+.article__bottom__content {
+  position: relative;
+}
+*/
+
+/* Cacher .exceprt par défaut en réduisant sa hauteur à 0 */
+.exceprt {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(20px); /* Commence en bas */
+  transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Animation de l'ensemble de .article__bottom */
+.article__bottom__content {
+  transform: translateY(0); /* Position normale */
+  transition: transform 0.5s ease;
+}
+
+/* Lors du hover, afficher .exceprt avec une animation de hauteur */
+.block__article:hover .exceprt {
+  max-height: 100px; /* Ajustez selon la taille du contenu */
+  opacity: 1;
+  transform: translateY(0); /* Remonte à sa position originale */
+}
+
+/* Pousser .article__bottom__content vers le haut quand .exceprt apparait */
+.block__article:hover .article__bottom__content {
+  transform: translateY(-20px); /* Déplace vers le haut de 20px */
+}
+
+.block__article:hover .title__button {
+  margin-bottom: 1rem;
+  transition: 0.5s;
+}
+
+
   @media screen and (min-width: 1024px) {
 .blog-fp {
 margin: 2rem;
