@@ -146,6 +146,15 @@ background-image: url('../images/background-test.jpg');
 padding: 2rem;
 }
 
+.socials {
+margin: 3rem 0 0 0;
+}
+
+.socials i {
+color: #fff;
+  font-size: 2rem;
+}
+
 @media screen and (min-width: 1024px) {
 .accueil {
 margin: 2rem;
