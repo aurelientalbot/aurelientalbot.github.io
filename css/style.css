@@ -33,7 +33,7 @@ body {
 /* header */
 
 header {
-  margin: 1rem;
+  margin: 1rem 0;
     position: fixed;
     left: 0;
     right: 0; 
