@@ -1,5 +1,3 @@
-
-
 // On attend que le DOM soit entièrement chargé
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector('.navbar-menu-toggle');
@@ -33,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function ajusterPaddingTop() {
-    var hauteurMenu = document.querySelector(".navbar").offsetHeight;
+    var hauteurMenu = document.querySelector("header").offsetHeight;
 
     var hauteurTotale = hauteurMenu;
     
