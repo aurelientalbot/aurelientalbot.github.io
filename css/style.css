@@ -17,25 +17,33 @@ https://www.todesktop.com/?ref=landingfolio
 https://www.rewind.ai/?ref=landingfolio
 https://www.nudgenow.com/?ref=landingfolio
 https://www.relume.io/?ref=landingfolio
+
+style contenu :
+https://www.sannewijbenga.com/?ref=landingfolio
 */
 
 
 body {
-      background-color: #f1f1f2;
-  font-family: "Inter", sans-serif;
+  background-color: #f0efed;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
+
+
 /* header */
+
 header {
   margin: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0; 
+  padding: 0 0 8rem 0;
 }
 
 .navbar {
     display: flex;
   flex-direction: row;
-  position: fixed;
-    left: 1rem;
-    right: 1rem; 
   margin-bottom: 1rem;
 }
 
@@ -50,10 +58,12 @@ header {
   border-radius: 10px;
       padding: 15px 15px;
   margin: 0 0.3rem 0 0;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
 }
 
-.navbar-brand h1 {
+.navbar-brand span {
     font-size: 24px;
+  margin: 0;
 }
 
 .navbar-menu {
@@ -68,6 +78,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
 }
 
 .navbar-menu-toggle span {
@@ -75,12 +86,12 @@ header {
 }
 
 .navbar-menu-links-box {
-  display: none; /* Cacher le menu au début */
+  display: none; 
   position: absolute;
   top: 4.1rem;
   right: 0;
   left: 0;
-  
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
          background-color: #fff;
   border-radius: 10px;
       padding: 15px 15px;
@@ -115,9 +126,6 @@ margin: 0.2rem 0;
 }
 
 @media screen and (min-width: 1024px) {
-  header {
-  margin: 1.5rem 2rem 1rem 1.5rem;
-}
   .navbar {
     left: 2rem;
     right: 2rem;
@@ -125,192 +133,59 @@ margin: 0.2rem 0;
   }  
   
   .navbar.scrolled {
-      left: 3.5rem;
-    right: 3.5rem;
+ padding: 0 2rem;
     transition: .5s;
 }
 }
+
 /* header */
 
-
-
-/* accueil section */
+/* Accueil */
 .accueil {
-margin: 1rem;
+  padding: 6rem 0;
 }
+.accueil h1 {
+ font-size: 80px;
+    font-weight: 600;
+}
+.accueil h2 {
+ font-size: 40px;
+    font-weight: 600;
+}
+.accueil p {
+ font-size: 18px;
+}
+/* Accueil */
 
-.accueil p, .accueil h1, .accueil h2 {
-color: #fff;
-}
 
-.accueil-background {
-background-image: url('../images/background-test.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-      border-radius: 10px;
-      margin-top: 1rem;
+/* second__nav */
+.second__nav {
+  margin: 4rem 0;
 }
-
-.accueil .content {
-padding: 2rem;
-}
-
-.socials {
-margin: 3rem 0 0 0;
-}
-
-.socials i {
-color: #fff;
-  font-size: 2rem;
-}
-
-@media screen and (min-width: 1024px) {
-.accueil {
-margin: 2rem;
-}
-  .accueil .content {
-padding: 4rem;
-}
-}
-/* accueil section */
+/* second__nav */
 
 
 
-/* blog section */
-.blog-fp {
-margin: 1rem;
-  padding: 1rem;
-  background-color: #fff;
-        border-radius: 10px;
+.articles {
+  margin: 4rem 0;
 }
 
-.block__article {
-  background-color: #fff;
-  border-radius: 10px;
-  height: 25rem;
-  overflow: hidden;
-  margin: 1rem 0;
-}
-
-
-article {
-  position: relative;
-   width: 100%;
-  height: 100%;
-}
-
-article .tumbnail {
-  position: absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-}
-
-article .tumbnail img {
- width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.article__bottom {
-z-index: 1;
-    position: absolute;
-    bottom: 0;
-    padding: 1rem;
-    left: 0.5rem;
-    right: 0.5rem;
-}
-
-.article__bottom__content {
-  background-color: #fff;
-  padding: 1rem;
-    border-radius: 10px;
-}
-
-.title__button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.title__button h2 {
-  line-height: 1;
-}
-
-.title__button a {
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  min-width: 5rem;
-  margin-left: 2rem;
-}
-
-/*
-.article__bottom__content {
-  position: relative;
-}
-*/
-
-/* Cacher .exceprt par défaut en réduisant sa hauteur à 0 */
-.exceprt {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transform: translateY(20px); /* Commence en bas */
-  transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
-}
-
-/* Animation de l'ensemble de .article__bottom */
-.article__bottom__content {
-  transform: translateY(0); /* Position normale */
-  transition: transform 0.5s ease;
-}
-
-/* Lors du hover, afficher .exceprt avec une animation de hauteur */
-.block__article:hover .exceprt {
-  max-height: 100px; /* Ajustez selon la taille du contenu */
-  opacity: 1;
-  transform: translateY(0); /* Remonte à sa position originale */
-}
-
-/* Pousser .article__bottom__content vers le haut quand .exceprt apparait */
-.block__article:hover .article__bottom__content {
-  transform: translateY(-20px); /* Déplace vers le haut de 20px */
-}
-
-.block__article:hover .title__button {
-  margin-bottom: 1rem;
-  transition: 0.5s;
-}
-
-
-  @media screen and (min-width: 1024px) {
-.blog-fp {
-margin: 2rem;
-}
-}
-/* blog section */
 
 
 
 /* footer */
 footer {
-margin: 1rem;
+  margin: 2rem 0;
+}
+
+footer .footer__content {
   padding: 1rem;
   background-color: #fff;
         border-radius: 10px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
 }
   footer p {
     margin: 0;
   }
-  @media screen and (min-width: 1024px) {
-footer {
-margin: 2rem;
-}
-}
+
 /* footer */
