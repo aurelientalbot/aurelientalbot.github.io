@@ -22,7 +22,6 @@ style contenu :
 https://www.sannewijbenga.com/?ref=landingfolio
 */
 
-
 body {
   background-color: #f0efed;
   font-family: "Poppins", sans-serif;
@@ -117,6 +116,25 @@ margin: 0.2rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 576px) {
+.navbar-menu-links-box {
+        margin: 0.5rem 1rem;
+}
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+.navbar-menu-links-box {
+        margin: 0.5rem auto;
+}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+ .navbar-menu-links-box { 
+           width: 508px;
+  }
+  
 }
 
 @media screen and (min-width: 768px) {
